@@ -1,0 +1,4 @@
+.patterns/
+*.zip
+__pycache__/
+simplestyle_horizon/
