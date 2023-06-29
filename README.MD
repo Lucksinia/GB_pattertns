@@ -5,8 +5,10 @@
 
 ## Implemented: ##
 
-- Basic  Html pages of __Index__, __About Us__, __Contact Us__ through the use of templates
+- Basic  Html pages of __Index__, __Examples__, __Contact__ through the use of Jinja template loader.
 - preview of _date_ and _weater_ in Minsk(temporary) with the help of Jinja2 templater
+- _POST_ and _GET_ requests are transferred to data.json (if it exists) on contact.html
+- __SOLID__ and __KISS__ principles another_page.html
 
 ## Not Implemented: ##
 
@@ -16,3 +18,8 @@
 - Javascript
 - Dinamicly generated POST-request to weather API based on lat&long of the user.
 - Anything else.
+- One click to open solid.
+
+## !!! This is collection of lesson 2 and lesson 3 (because I already made basic templates when doing first one. ##
+__so base tamplates already existed.__
+I just couldn't make it work without them... properly.

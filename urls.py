@@ -1,8 +1,6 @@
 from datetime import date
 from views import Index, About, Contacts
 
-# https://api.open-meteo.com/v1/forecast?latitude=53.90&longitude=27.43&hourly=temperature_2m
-
 
 # front controller
 def front(request):

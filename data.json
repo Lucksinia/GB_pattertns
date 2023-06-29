@@ -1,0 +1,61 @@
+{
+    "GET": [
+        {
+            "lesson": "2",
+            "get": "1"
+        }
+    ],
+    "POST": [
+        {
+            "your_name": "Daniil",
+            "your_email": "testy@gmail.com",
+            "your_message": "Something witty, idk",
+            "contact_submitted": "submit"
+        },
+        {
+            "your_name": "Daniil",
+            "your_email": "testyadress@gmail.com",
+            "your_message": "Testing saving through json in 15---nth time",
+            "contact_submitted": "submit"
+        },
+        {
+            "kiss": "1"
+        },
+        {
+            "kiss": "1"
+        },
+        {
+            "kiss": "1"
+        },
+        {
+            "kiss": "1"
+        },
+        {
+            "kiss": "1"
+        },
+        {
+            "kiss": "1"
+        },
+        {
+            "kiss": "1"
+        },
+        {
+            "kiss": "1"
+        },
+        {
+            "kiss": "1"
+        },
+        {
+            "kiss": "1"
+        },
+        {
+            "kiss": "1"
+        },
+        {
+            "kiss": "1"
+        },
+        {
+            "kiss": "1"
+        }
+    ]
+}
