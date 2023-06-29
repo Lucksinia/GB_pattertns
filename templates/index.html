@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
 <html>
+{% extends "base.html" %}
+{% block content %}
 
 <head>
-  <title>PROJECT PAGE</title>
+  <title>PatternGB project</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
 </head>
 
 <body>
@@ -15,69 +17,45 @@
       <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index">Index<span class="logo_colour">Page where it starts</span></a></h1>
-          <h2>v 0.0.1 of LESSON 1</h2>
+          <h1><a href="/">Simple<span class="logo_colour">_style_horizon</span></a></h1>
+          <h2>Simple. Contemporary. Website Template.</h2>
+          <img src="static/img/03.jpg">
+          <p>{{ weather }}</p>
         </div>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li class="selected"><a href="index">Index</a></li>
-          <li><a href="examples">About Us</a></li>
-          <!--<li><a href="page.html">A Page</a></li>-->
-          <!--<li><a href="another_page.html">Another Page</a></li>-->
-          <li><a href="contact">Contact Us</a></li>
-        </ul>
       </div>
     </div>
-    <div id="content_header"></div>
     <div id="site_content">
-      <div id="banner"></div>
-      <div id="sidebar_container">
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <!-- insert your sidebar items here -->
-            <h3>Latest News</h3>
-            <h4>New Website Launched</h4>
-            <h5>February 1st, 2014</h5>
-            <p>2014 sees the redesign of our website. Take a look around and let us know what you think.<br /><a
-                href="#">Read more</a></p>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <h3>Useful Links</h3>
-            <ul>
-              <li><a href="#">link 1</a></li>
-              <li><a href="#">link 2</a></li>
-              <li><a href="#">link 3</a></li>
-              <li><a href="#">link 4</a></li>
-            </ul>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <h3>Search</h3>
-            <form method="post" action="#" id="search_form">
-              <p>
-                <input class="search" type="text" name="search_field" value= />
-                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png"
-                  alt="Search" title="Search" />
-              </p>
-            </form>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Latest News</h3>
+        <h4>New Website Launched</h4>
+        <h5>DATE: {{ date }}</h5>
+        <p>Wow, there are a date<br /><a href="#">Read more</a></p>
+        <p></p>
+        <h4>New Website Launched</h4>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="https://gb.ru/lessons/336384">GB Patterns</a></li>
+          <li><a href="https://github.com/Lucksinia"></a>My GITHUB</li>
+          <li><a href="https://jinja.palletsprojects.com/en/3.1.x/api/#basics">Jinja2 docs</a></li>
+        </ul>
+        <h3>Search</h3>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Enter keywords....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png"
+              alt="Search" title="Search" />
+          </p>
+        </form>
       </div>
       <div id="content">
         <!-- insert the page content here -->
-        <h1>DATE plaque: {{date}}</h1>
-        <p><strong>Weather:</strong> {{weather}}</p>
+        <h1>Text</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro recusandae quam debitis magnam enim cumque
+          quasi, ut exercitationem consequatur quas corporis iure quis maxime veniam soluta possimus magni. Ad, vel.
+          Consectetur non praesentium libero, vitae suscipit sint! Odit fugit fugiat voluptas provident autem expedita
+          voluptatibus totam possimus dicta officia, pariatur deserunt adipisci atque minus odio nesciunt et eius
+          officiis in.</p>
         <p>This template is written entirely in <strong>HTML5</strong> and <strong>CSS</strong>, and can be validated
           using the links in the footer.</p>
         <p>You can view more free HTML5 web templates <a href="http://www.html5webtemplates.co.uk">here</a>.</p>
@@ -92,15 +70,9 @@
         </ul>
       </div>
     </div>
-    <div id="content_footer"></div>
-    <div id="footer">
-      <!--<p><a href="index.html">Home</a> | <a href="examples">Examples</a> | <a href="page.html">A Page</a> | <a
-          href="another_page.html">Another Page</a> | <a href="contact">Contact Us</a></p>-->
-      <p>Copyright &copy; simplestyle_horizon | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a
-          href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a
-          href="http://www.html5webtemplates.co.uk">Simple web templates by HTML5</a></p>
-    </div>
+
   </div>
 </body>
 
 </html>
+{% endblock %}

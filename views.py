@@ -1,3 +1,6 @@
+"""
+This one is deprecated in place of Flask-esque routing
+"""
 from my_framework.templator import render
 
 
