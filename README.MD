@@ -21,5 +21,10 @@
 - One click to open solid.
 
 ## !!! This is collection of lesson 2 and lesson 3 (because I already made basic templates when doing first one. ##
+
 __so base tamplates already existed.__
 I just couldn't make it work without them... properly.
+
+### for lesson_3 ###
+
+- Solidified code a little.

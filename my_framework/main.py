@@ -47,13 +47,10 @@ class API:
 
             print(request_params)  # Console debug
 
-            if "solid" in request_params:  # if solid, then render it out
+            if "solid" or "kiss" in request_params:  # if solid, then render it out
                 self.solid = self.get_solid(request_params)
 
-            if "kiss" in request_params:  # (TODO: SOLIDify it)
-                self.kiss = self.get_kiss(request_params)
-
-            if request_params != {} and "solid" not in request_params:
+            if request_params != {} and "solid" or "kiss" not in request_params:
                 save_data(request_params, "POST")
 
         return response(environ, start_response)
@@ -67,14 +64,12 @@ class API:
         self.response_404(response)
         return response
 
-    def get_solid(self, request_params):
+    def get_principles(self, request_params):
         try:
             self.solid = SOLID[int(request_params["solid"])]
             return self.solid
         except:
             pass
-
-    def get_kiss(self, request_params):
         try:
             self.kiss = KISS[int(request_params["kiss"])]
             return self.kiss
